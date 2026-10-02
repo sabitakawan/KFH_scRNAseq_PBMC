@@ -3,3 +3,6 @@ The dataset deposited here corresponds to the matrix of counts (raw counts and S
 Untreated ("unstimulated")
 Primed with lipopolysaccharides ("LPS")
 Activated with lipopolysaccharides and adenosinetriphosphate ("LPS+ATP").
+
+The object is a Seurat object saved with a ".rds" extension in Zenodo as "Seurat_object_harmony_annotated.RDS"
+md5code: f25adcd4301b58e91f93ea7b979a3468
