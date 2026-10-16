@@ -11,7 +11,7 @@ library(stringr)
 
 ## Load Table S15 for reproducing Figure S4B
 turunen_scRNAseq_within_Patient_LPS_GO_downreg_enriched_terms_26072023 <- readxl::read_excel("~/Desktop/Manuscript_scRNA/Manucript_SK_coauthors/Supplementary Data/Supplementary_Table.xlsx",
-                                                                                             sheet="Table S15", skip=3)
+                                                                                             sheet="Table S14", skip=3)
 
 simMatrix_LPS_down<- calculateSimMatrix(turunen_scRNAseq_within_Patient_LPS_GO_downreg_enriched_terms_26072023$ID,
                                               orgdb="org.Hs.eg.db",
