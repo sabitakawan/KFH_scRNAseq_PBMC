@@ -108,7 +108,7 @@ ggsave("FigureS4B.pdf",
        height = 4)
 
 ###########Semantic analysis GO-BP for downregulated DEGs within LPS stimulated monocytes compared to unstimulated monocytes from Healthy control [FIGURES4C]
-## Load Table S15B for reproducing Figure S4B
+## Load Table S15B for reproducing Figure S4C
 WithinHC_LPS_GO_upreg_enriched_terms <- readxl::read_excel("~/Desktop/Supplementary_Table.xlsx",
                                                             sheet="Table S15B", skip=3)
 simMatrix_withinHC_LPS_upreg<- calculateSimMatrix(WithinHC_LPS_GO_upreg_enriched_terms$ID,
@@ -208,8 +208,8 @@ ggsave("FigureS4C.pdf",
 
 
 
-###########Semantic analysis GO-BP for downregulated DEGs within LPS+ATP stimulated monocytes compared to unstimulated monocytes from patient with KFH [FIGURES4C]
-## Load Table S20B for reproducing Figure S5B
+###########Semantic analysis GO-BP for downregulated DEGs within LPS+ATP stimulated monocytes compared to unstimulated monocytes from patient with KFH [FIGURES4D]
+## Load Table S20B for reproducing Figure S4D
 WithinKFH_LPS_ATP_GO_upreg_enriched_terms <- readxl::read_excel("~/Desktop/Supplementary_Table.xlsx",
                                                             sheet="Table S20B", skip=3)
 simMatrix_withinKFH_LPS_ATP_upreg<- calculateSimMatrix(WithinKFH_LPS_ATP_GO_upreg_enriched_terms$ID,
@@ -303,13 +303,13 @@ top_parents_WithinKFH_LPS_ATP_GO_upreg_plot<- ggplot(top_parents_WithinKFH_LPS_A
     plot.margin      = margin(t = 8, r = 6, b = 8, l = 6)
   )
 top_parents_WithinKFH_LPS_ATP_GO_upreg_plot
-ggsave("FigureS5B.pdf",
+ggsave("FigureS4D.pdf",
        plot   = top_parents_WithinKFH_LPS_ATP_GO_upreg_plot,
        width  = 7,
        height = 4)
 
-###########Semantic analysis GO-BP for downregulated DEGs within LPS+ATP stimulated monocytes compared to unstimulated monocytes from Healthy control [FIGURES5C]
-## Load Table S19B for reproducing Figure S5C
+###########Semantic analysis GO-BP for downregulated DEGs within LPS+ATP stimulated monocytes compared to unstimulated monocytes from Healthy control [FIGURES4E]
+## Load Table S19B for reproducing Figure S4E
 WithinHC_LPS_ATP_GO_upreg_enriched_terms <- readxl::read_excel("~/Desktop/Supplementary_Table.xlsx",
                                                            sheet="Table S19B", skip=3)
 simMatrix_withinHC_LPS_ATP_upreg<- calculateSimMatrix(WithinHC_LPS_ATP_GO_upreg_enriched_terms$ID,
@@ -403,7 +403,7 @@ top_parents_WithinHC_LPS_ATP_GO_upreg_plot<- ggplot(top_parents_WithinHC_LPS_ATP
     plot.margin      = margin(t = 8, r = 6, b = 8, l = 6)
   )
 top_parents_WithinHC_LPS_ATP_GO_upreg_plot
-ggsave("FigureS5C.pdf",
+ggsave("FigureS4E.pdf",
        plot   = top_parents_WithinHC_LPS_ATP_GO_upreg_plot,
        width  = 7,
        height = 4)
