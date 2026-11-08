@@ -142,9 +142,9 @@ da_test_edgeR <- ggplot(edgeR_all, aes(x = Treatment, y = CellType, fill = logFC
   ggtitle("Differential abundance (KFH vs controls)")
 
 
-## Main Figure 2D
+## Main Figure 1D
 
-pdf(file="figs/mainFigures/Figure2D.pdf", width=8, height =8)
+pdf(file="figs/mainFigures/Figure1D.pdf", width=8, height =8)
 plot(da_test_edgeR)
 dev.off()
 

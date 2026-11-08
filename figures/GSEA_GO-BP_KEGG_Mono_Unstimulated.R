@@ -3,7 +3,7 @@ library(dplyr)
 library(stringr)
 library(scales)
 
-####Plot for Gene-set enrichment analysis (GSEA) of GO-BP for DEgenes in monocytes from patients with KFH compared to healthy control in Supplementary Table/ Table S7 [Figure 6C]
+####Plot for Gene-set enrichment analysis (GSEA) of GO-BP for DEgenes in monocytes from patients with KFH compared to healthy control in Supplementary Table/ Table S7 [Figure 4C]
 ####Analysis done in GSEA_MonoMacroDCs.R
 
 GSEA_GO_Untreated_enriched_terms <- readxl::read_excel("~/Desktop/Supplementary_Table.xlsx",
@@ -94,13 +94,13 @@ GSEA_GO_Untreated_enriched_terms_plot<- ggplot(GSEA_GO_Untreated_enriched_terms_
   )
 GSEA_GO_Untreated_enriched_terms_plot
 
-ggsave("Figure6C.pdf",
+ggsave("Figure4C.pdf",
        plot   = GSEA_GO_Untreated_enriched_terms_plot,
        width  = 7,
        height = 5)
 
 
-############## Gene-set enrichment analysis (GSEA) of KEGG pathway for DEgenes in monocytes from patients with KFH compared to healthy control presented in Supplementary Table/Table S9 [Figure 6E]
+############## Gene-set enrichment analysis (GSEA) of KEGG pathway for DEgenes in monocytes from patients with KFH compared to healthy control presented in Supplementary Table/Table S9 [Figure 4E]
 ############# Analysis done in GSEA_MonoMacroDCs.R
 GSEA_KEGG_Untreated_enriched_terms <- readxl::read_excel("~/Desktop/Supplementary_Table.xlsx",
                                                        sheet="Table S9", skip=5)
@@ -190,7 +190,7 @@ GSEA_KEGG_Untreated_enriched_terms_plot<- ggplot(GSEA_KEGG_Untreated_enriched_te
   )
 GSEA_KEGG_Untreated_enriched_terms_plot
 
-ggsave("Figure6E.pdf",
+ggsave("Figure4E.pdf",
        plot   = GSEA_KEGG_Untreated_enriched_terms_plot,
        width  = 6,
        height = 4)

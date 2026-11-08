@@ -111,7 +111,7 @@ RRHO_plot_custom<-function (list1, list2, stepsize = defaultStepSize(list1, list
 
 ## Comparison1 (Untreated vs LPS)
 
-## Main Figure 5A (left) ##
+## Main Figure 3A (left) ##
 
 name_i <- "monocytes_LPS"
 name_j <- "monocytes_Untreated"
@@ -119,7 +119,7 @@ untreated_mono_c1 <- untreated_mono[intersect(rownames(untreated_mono),rownames(
 lps_treated_mono_c1 <- lps_treated_mono[intersect(rownames(lps_treated_mono),rownames(untreated_mono)),c("gene","avg_log2FC")]
 RRHO_plot_custom(lps_treated_mono_c1,untreated_mono_c1,stepsize = 100, labels = c(name_i,name_j),plots = T,
                  alternative = "two.sided",
-                 outputdir = "figs/mainFigures/Figure5A.pdf") #the figure is the heatmap in this folder
+                 outputdir = "figs/mainFigures/Figure3A.pdf") #the figure is the heatmap in this folder
 
 
 
@@ -127,7 +127,7 @@ RRHO_plot_custom(lps_treated_mono_c1,untreated_mono_c1,stepsize = 100, labels = 
 
 ## Comparison2 (Untreated vs LPS-ATP)
 
-## Main Figure 5B (left) ##
+## Main Figure 3B (left) ##
 
 
 name_i <- "monocytes_LPS_ATP"
@@ -136,12 +136,12 @@ untreated_mono_c2 <- untreated_mono[intersect(rownames(untreated_mono),rownames(
 lpsatp_treated_mono_c2 <- lpsatp_treated_mono[intersect(rownames(lpsatp_treated_mono),rownames(untreated_mono)),c("gene","avg_log2FC")]
 RRHO_plot_custom(lpsatp_treated_mono_c2,untreated_mono_c2,stepsize = 100, labels = c(name_i,name_j),plots = T,
                  alternative = "two.sided",
-                 outputdir = "figs/mainFigures/Figure5B.pdf") #the figure is the heatmap in this folder
+                 outputdir = "figs/mainFigures/Figure3B.pdf") #the figure is the heatmap in this folder
 
 
 ## Comparison3 (LPS vs LPS-ATP)
 
-## Main Figure 5C (left) ##
+## Main Figure 3C (left) ##
 
 name_i <- "monocytes_LPS_ATP"
 name_j <- "monocytes_LPS"
@@ -151,6 +151,6 @@ lpsatp_treated_mono_c3 <- lpsatp_treated_mono[intersect(rownames(lpsatp_treated_
 
 RRHO_plot_custom(lpsatp_treated_mono_c3, lps_treated_mono_c3, stepsize = 100, labels = c(name_i,name_j),plots = T,
                  alternative = "two.sided",
-                 outputdir = "figs/mainFigures/Figure5C.pdf") #the figure is the heatmap in this folder
+                 outputdir = "figs/mainFigures/Figur3C.pdf") #the figure is the heatmap in this folder
 
 

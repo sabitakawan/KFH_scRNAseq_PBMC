@@ -78,11 +78,13 @@ UMAP_IL1B<-FeaturePlot(
 
 UMAP_IL1B
 
-ggsave("UMAP_IL1B_Figure4B.pdf", UMAP_IL1B, width=8, height=6, dpi=300)
-ggsave("UMAP_NLRP3_Figure4A.pdf", UMAP_IL1B, width=8, height=6, dpi=300)
+###main figure
+ggsave("UMAP_NLRP3_Figure2A.pdf", UMAP_IL1B, width=8, height=6, dpi=300)
+ggsave("UMAP_IL1B_Figure2B.pdf", UMAP_IL1B, width=8, height=6, dpi=300)
 
 
-#####Cell number
+
+#####Cell number-main figure
 # Check metadata columns
 colnames(Seurat_object_harmony_annotated@meta.data)
 
@@ -101,10 +103,10 @@ cell_number<-ggplot(df, aes(x = sample, y = retained_cells)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 cell_number
 
-ggsave("Number of cells_Figure2A.pdf", cell_number, width=8, height=6, dpi=300)
+ggsave("Number of cells_Figure1A.pdf", cell_number, width=8, height=6, dpi=300)
 
 
-#####cell proportion
+#####cell proportion-main Figure
 
 # Count cells per sample x cell type [Broad_annotation Figure2C]
 cell_proportion_df <- Seurat_object_harmony_annotated@meta.data %>%
@@ -209,6 +211,8 @@ cell_proportion_broad_annot<-ggplot(cell_proportion_broad_df, aes(x = sample, y 
 
 cell_proportion_broad_annot
 
+##main figure
+ggsave("cell_proportion_narrow_annot_Figure1C.pdf", cell_proportion_narrow_annot, width=8, height=6, dpi=300)
 
-ggsave("cell_proportion_narrow_annot_Figure2C.pdf", cell_proportion_narrow_annot, width=8, height=6, dpi=300)
+###Supplementary Figure
 ggsave("cell_proportion_broad_annot_FigureS1B.pdf", cell_proportion_broad_annot, width=8, height=6, dpi=300)

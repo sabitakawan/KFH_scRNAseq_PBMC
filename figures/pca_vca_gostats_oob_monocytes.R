@@ -83,9 +83,9 @@ pseudoPCA_mono <- ggplot(dfPca, aes(x=PC1, y=PC2, col=treatment, shape=disease_s
 
 plot(pseudoPCA_mono)
 
-## Main Figure 3B ##
+## Main Figure S2A ##
 
-pdf(file="figs/mainFigures/Figure3B.pdf")
+pdf(file="figs/SupplementaryFigures/FigureS2A.pdf")
 plot(pseudoPCA_mono)
 dev.off()
 
@@ -223,9 +223,9 @@ colnames(tmp_var2) <- c("var","nGenes")
 tmp_var2$var <- factor(tmp_var2$var, levels=tmp_var2$var[order(tmp_var2$nGenes, decreasing=F)])
 
 
-## Main Figure 3E ##
+## Supplementary FigureS2B ##
 
-pdf(file="figs/mainFigures/Figure3E.pdf", width=6.25, height=6.25)
+pdf(file="figs/supplementaryFigures/FigureS2B.pdf", width=6.25, height=6.25)
 
 ggplot(data=tmp_var2, aes(y=var, x=nGenes, fill=var))+
   geom_bar(stat="identity", color="black")+
@@ -391,9 +391,9 @@ gostats_plot <- ggplot(data=cov_goenrich_high, aes(x=OddsRatio, y=short, size=Co
   geom_text(aes(y=short, x=-3, label=ranking), size=4, col="black")
 
 
-## Main Figure 3H ##
+## Supplementary FigureS2C ##
 
-pdf(file="figs/mainFigures/Figure3H.pdf", width=12, height=4)
+pdf(file="figs/supplementaryFigures/FigureS2C.pdf", width=12, height=4)
 plot(gostats_plot)
 dev.off()
 
@@ -417,6 +417,16 @@ resPC_aov <-
 resPC_aov$PC <- factor(resPC_aov$PC, levels=unique(resPC_aov$PC))
 
 
+
+
+
+
+
+
+
+
+
+#####not included in the manuscript
 ## for monocytes
 
 pdf(file="figs/suppFigures/FigureS2C.pdf"

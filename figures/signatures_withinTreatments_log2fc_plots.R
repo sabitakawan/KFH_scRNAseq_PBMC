@@ -141,26 +141,26 @@ plotterFunction <- function(obj1=mono_within_lps_kfh_vs_ctrl, obj2=mono_within_u
 
 
 ## KFH vs ctrl (LPS vs untr)
-## Main Figure 5A (right) ##
+## Main Figure 3A (right) ##
 
 plotterFunction(obj1=mono_within_lps_kfh_vs_ctrl, obj2=mono_within_untr_kfh_vs_ctrl,
                 def.cond1= "KFH vs ctrl (LPS) [in log2FC]", def.cond2= "KFH vs ctrl (Untreated) [in log2FC]",
                 title_text="Effect of priming on disease",
-                figureName="Figure5A.pdf")
+                figureName="Figure3A.pdf")
   
 ## KFH vs ctrl (LPS-ATP vs untr)
-## Main Figure 5B (right) ##
+## Main Figure 3B (right) ##
 
 plotterFunction(obj1=mono_within_lpsatp_kfh_vs_ctrl, obj2=mono_within_untr_kfh_vs_ctrl,
                 def.cond1= "KFH vs ctrl (LPS-ATP) [in log2FC]", def.cond2= "KFH vs ctrl (Untreated) [in log2FC]",
                 title_text="Effect of priming+activation on disease",
-                figureName="Figure5B.pdf")
+                figureName="Figure3B.pdf")
 
 ## KFH vs ctrl (LPS-ATP vs LPS)
-## Main Figure 5C (right) ##
+## Main Figure 3C (right) ##
 
 plotterFunction(obj1=mono_within_lpsatp_kfh_vs_ctrl, obj2=mono_within_lps_kfh_vs_ctrl,
                 def.cond1= "KFH vs ctrl (LPS-ATP) [in log2FC]", def.cond2= "KFH vs ctrl (LPS) [in log2FC]",
                 title_text="Effect of activation on disease",
-                figureName="Figure5C.pdf")
+                figureName="Figure3C.pdf")
 

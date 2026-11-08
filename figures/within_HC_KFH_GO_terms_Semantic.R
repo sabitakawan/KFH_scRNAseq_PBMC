@@ -5,6 +5,8 @@ library(rrvgo)
 library(GOSemSim)
 library(stringr)
 
+###Supplementary Figures
+
 #####ORA_GO_BP enrichment analysis for upregulated and downregulated DEGs within LPS and LPS+ATP stimulated monocytes compared to their unstimulated condition in patients with KFH and healthy controls separately. 
 ####Analysis pipeline is presented in diffexp_and_ORA.R
 

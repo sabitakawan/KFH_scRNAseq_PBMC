@@ -152,8 +152,8 @@ monoPlot <- ggplot(data=alldfs, aes(x=test, y=gene, fill=avg_log2FC))+
   xlab("")+ylab("")
 
 
-## Main Figure 4D ##
-pdf(file="figs/mainFigures/Figure4D.pdf")
+## Main Figure 2D ##
+pdf(file="figs/mainFigures/Figure2D.pdf")
 plot(monoPlot)
 dev.off()
 
@@ -301,8 +301,8 @@ tcellsPlot <- ggplot(data=alldfs, aes(x=test, y=gene, fill=avg_log2FC))+
 
 
 
-## Main Figure 7E ##
-pdf(file="figs/mainFigures/Figure7E.pdf", width=8, height=3.5)
+## Main Figure 5E ##
+pdf(file="figs/mainFigures/Figure5E.pdf", width=8, height=3.5)
 plot(tcellsPlot)
 dev.off()
 

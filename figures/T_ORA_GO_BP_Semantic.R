@@ -6,7 +6,7 @@ library(rrvgo)
 library(GOSemSim)
 library(stringr)
 
-############Semantic analysis GO-BP for upregulated DEGs in unstimulated T cells compared between patients with KFH and healthy controls. Data is presented in Supplementary Table/Table S8  [FIGURE 6C]
+############Semantic analysis GO-BP for upregulated DEGs in unstimulated T cells compared between patients with KFH and healthy controls. Data is presented in Supplementary Table/Table S8  [FIGURE 4D]
 ## Load Table S8B with GO terms for upregulated DEGs analysed [analysis done in diffexp_and_ORA_T.R]
 
 Untreated_GO_upreg_enriched_terms <- readxl::read_excel("~/Desktop/Supplementary_Table.xlsx",
@@ -101,13 +101,13 @@ GO_term_Untreated_T<- ggplot(top_parents_Untreated,
     plot.margin      = margin(t = 8, r = 6, b = 8, l = 6)
   )
 GO_term_Untreated_T
-ggsave("Figure6D.pdf",
+ggsave("Figure4D.pdf",
        plot   = GO_term_Untreated_T,
        width  = 6.5,
        height = 4.5)
 
 
-################Semantic analysis GO-BP for upregulated DEGs in LPS-stimulated T cells compared between patients with KFH and healthy controls. Data is presented in Supplementary Table/Table S13  [FIGURE 7C]
+################Semantic analysis GO-BP for upregulated DEGs in LPS-stimulated T cells compared between patients with KFH and healthy controls. Data is presented in Supplementary Table/Table S13  [FIGURE 5D]
 ## Load Table S13B with GO terms for upregulated DEGs analysed [analysis done in diffexp_and_ORA_T.R]
 
 LPS_GO_upreg_enriched_terms <- readxl::read_excel("~/Desktop/Supplementary_Table.xlsx",
@@ -204,12 +204,12 @@ GO_term_LPS_T<- ggplot(top_parents_LPS,
     plot.margin      = margin(t = 8, r = 6, b = 8, l = 6)
   )
 GO_term_LPS_T
-ggsave("Figure7D.pdf",
+ggsave("Figure5D.pdf",
        plot   = GO_term_LPS_T,
        width  = 7.5,
        height = 4)
 
-################Semantic analysis GO-BP for upregulated DEGs in LPS+ATP-stimulated T cells compared between patients with KFH and healthy controls. Data is presented in Supplementary Table/Table S18  [FIGURE 8C]
+################Semantic analysis GO-BP for upregulated DEGs in LPS+ATP-stimulated T cells compared between patients with KFH and healthy controls. Data is presented in Supplementary Table/Table S18  [FIGURE 6C]
 ## Load Table S18B with GO terms for upregulated DEGs analysed [analysis done in diffexp_and_ORA_T.R]
 
 
@@ -309,7 +309,7 @@ GO_term_LPS_ATP_T<- ggplot(top_parents_LPS_ATP,
     plot.margin      = margin(t = 8, r = 6, b = 8, l = 6)
   )
 GO_term_LPS_ATP_T
-ggsave("Figure8C.pdf",
+ggsave("Figure6C.pdf",
        plot   = GO_term_LPS_ATP_T,
        width  = 6,
        height = 4)
